@@ -11,12 +11,42 @@ module.exports = {
       {
         test: /\.(tsx?|jsx?)$/,
         use: 'ts-loader',
-        exclude: /node_modules/
+        exclude: /(node_modules|tests)/
+      },
+      {
+        test: /\.css$/i,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+        ]
+      },
+      {
+        test: /\.less$/i,
+        use: [
+          { loader: "style-loader" },
+          {
+            loader: "css-loader",
+            options: {
+              modules: {
+                mode: (resourcePath) => {
+                  if (/pure.css$/i.test(resourcePath)) {
+                    return "pure";
+                  }
+                  if (/global.css$/i.test(resourcePath)) {
+                    return "global";
+                  }
+                  return "local";
+                },
+              }
+            }
+          },
+          { loader: "less-loader" },
+        ],
       },
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.tsx', '.ts', '.js', '.less', 'css'],
   },
   devtool: 'inline-source-map',
   devServer: {
