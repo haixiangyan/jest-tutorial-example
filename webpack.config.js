@@ -47,6 +47,11 @@ module.exports = {
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.less', 'css'],
+    alias: {
+      utils: path.join(__dirname, 'src/utils/'),
+      components: path.join(__dirname, 'src/components/'),
+      apis: path.join(__dirname, 'src/apis/'),
+    }
   },
   devtool: 'inline-source-map',
   devServer: {

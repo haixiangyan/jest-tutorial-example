@@ -30,7 +30,8 @@
     "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
     "paths": {
       "utils/*": ["src/utils/*"],
-      "components/*": ["src/components/*"]
+      "components/*": ["src/components/*"],
+      "apis/*": ["src/apis/*"]
     },                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */
