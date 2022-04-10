@@ -138,7 +138,7 @@ module.exports = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  // testEnvironment: "jest-environment-node",
+  testEnvironment: "jest-environment-jsdom-global",
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
