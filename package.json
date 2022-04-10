@@ -1,0 +1,23 @@
+{
+  "name": "jest-starter",
+  "version": "1.0.0",
+  "description": "一个 Jest 的小实验",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haixiangyan/jest-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haixiangyan/jest-starter/issues"
+  },
+  "homepage": "https://github.com/haixiangyan/jest-starter#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
