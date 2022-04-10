@@ -4,6 +4,8 @@
   "description": "一个 Jest 的小实验",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "start": "webpack serve",
     "test": "jest"
   },
   "repository": {
@@ -18,10 +20,23 @@
   },
   "homepage": "https://github.com/haixiangyan/jest-starter#readme",
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.0.0",
     "@types/jest": "^27.4.1",
+    "@types/react": "^18.0.1",
+    "@types/react-dom": "^18.0.0",
+    "html-webpack-plugin": "^5.5.0",
     "jest": "^27.5.1",
     "jest-environment-jsdom-global": "^3.0.0",
     "ts-jest": "^27.1.4",
-    "typescript": "^4.6.3"
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.3",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
