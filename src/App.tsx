@@ -1,6 +1,6 @@
 import React, {FC} from "react";
 import zhCN from 'antd/lib/locale/zh_CN';
-import AuthButton from "./components/AuthButton";
+import AuthButton from "components/AuthButton";
 import {ConfigProvider} from "antd";
 
 const App: FC = () => {
