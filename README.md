@@ -1,5 +1,7 @@
 # jest-starter
 
+[![Coverage Status](https://coveralls.io/repos/github/haixiangyan/jest-starter/badge.svg?branch=main)](https://coveralls.io/github/haixiangyan/jest-starter?branch=main)
+
 ## 主要内容
 
 * Jest 配置
