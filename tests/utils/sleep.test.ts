@@ -9,7 +9,7 @@ describe('sleep', () => {
       callback();
     }
 
-    const mockCallback = jest.fn(() => console.log('callback'));
+    const mockCallback = jest.fn();
 
     const promise = act(mockCallback);
 
