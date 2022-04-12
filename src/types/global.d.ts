@@ -1,4 +1,4 @@
-declare module globalThis {
+declare namespace globalThis {
   var jsdom: any;
 }
 

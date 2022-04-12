@@ -4,7 +4,7 @@ import classNames from "classnames";
 import styles from './styles.module.less';
 import {getUserRole, UserRoleType} from "apis/user";
 
-interface Props extends ButtonProps {}
+type Props = ButtonProps
 
 const mapper: Record<UserRoleType, string> = {
   user: '普通用户',

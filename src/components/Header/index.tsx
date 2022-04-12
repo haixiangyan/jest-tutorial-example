@@ -2,7 +2,7 @@ import React, {FC, HTMLAttributes} from "react";
 import classNames from "classnames";
 import {isDev} from "../../config";
 
-interface Props extends HTMLAttributes<HTMLHeadElement> {}
+type Props = HTMLAttributes<HTMLHeadElement>
 
 const Header: FC<Props> = (props) => {
   const { className, ...restProps } = props;

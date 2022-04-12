@@ -4,7 +4,7 @@ describe('sleep', () => {
   it('可以在 1s 后再执行',  async () => {
     jest.useFakeTimers();
 
-    const act = async (callback: Function) => {
+    const act = async (callback: () => void) => {
       await sleep(1000)
       callback();
     }
