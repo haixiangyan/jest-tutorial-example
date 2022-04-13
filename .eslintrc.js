@@ -5,8 +5,7 @@ module.exports = {
     node: true,
     "jest/globals": true
   },
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'jest', 'testing-library'],
+  plugins: [],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
