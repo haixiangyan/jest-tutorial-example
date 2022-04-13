@@ -5,13 +5,6 @@ export interface Options {
   max?: number;
 }
 
-export interface Actions {
-  inc: (delta?: number) => void;
-  dec: (delta?: number) => void;
-  set: (value: number | ((c: number) => number)) => void;
-  reset: () => void;
-}
-
 export type ValueParam = number | ((c: number) => number);
 
 function getTargetValue(val: number, options: Options = {}) {
