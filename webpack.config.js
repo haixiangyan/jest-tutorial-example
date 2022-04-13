@@ -51,6 +51,7 @@ module.exports = {
       utils: path.join(__dirname, 'src/utils/'),
       components: path.join(__dirname, 'src/components/'),
       apis: path.join(__dirname, 'src/apis/'),
+      hooks: path.join(__dirname, 'src/hooks/'),
     }
   },
   devtool: 'inline-source-map',
