@@ -1,1 +1,1 @@
-export const isDev = window.location.search.includes('isDev');
+export const isDev = window.location.search.includes("isDev");

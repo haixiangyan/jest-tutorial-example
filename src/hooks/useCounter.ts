@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export interface Options {
   min?: number;
@@ -10,10 +10,10 @@ export type ValueParam = number | ((c: number) => number);
 function getTargetValue(val: number, options: Options = {}) {
   const { min, max } = options;
   let target = val;
-  if (typeof max === 'number') {
+  if (typeof max === "number") {
     target = Math.min(max, target);
   }
-  if (typeof min === 'number') {
+  if (typeof min === "number") {
     target = Math.max(min, target);
   }
   return target;
@@ -31,7 +31,7 @@ function useCounter(initialValue = 0, options: Options = {}) {
 
   const setValue = (value: ValueParam) => {
     setCurrent((c) => {
-      const target = typeof value === 'number' ? value : value(c);
+      const target = typeof value === "number" ? value : value(c);
       return getTargetValue(target, {
         max,
         min,
@@ -39,11 +39,11 @@ function useCounter(initialValue = 0, options: Options = {}) {
     });
   };
 
-  const inc = (delta= 1) => {
+  const inc = (delta = 1) => {
     setValue((c) => c + delta);
   };
 
-  const dec = (delta  = 1) => {
+  const dec = (delta = 1) => {
     setValue((c) => c - delta);
   };
 

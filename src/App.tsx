@@ -1,8 +1,8 @@
-import React, {FC} from "react";
-import zhCN from 'antd/lib/locale/zh_CN';
+import React, { FC } from "react";
+import zhCN from "antd/lib/locale/zh_CN";
 import AuthButton from "components/AuthButton";
 import Header from "components/Header";
-import {Button, ConfigProvider} from "antd";
+import { Button, ConfigProvider } from "antd";
 import useCounter from "hooks/useCounter";
 
 const App: FC = () => {
@@ -30,7 +30,7 @@ const App: FC = () => {
         </section>
       </div>
     </ConfigProvider>
-  )
-}
+  );
+};
 
 export default App;

@@ -1,13 +1,14 @@
-import {rest} from "msw";
+import { rest } from "msw";
 
 const handlers = [
-  rest.get('https://mysite.com/api/role', async (req, res, ctx) => {
+  rest.get("https://mysite.com/api/role", async (req, res, ctx) => {
     res(
       ctx.status(200),
       ctx.json({
-        userType: 'user'
-      }))
+        userType: "user",
+      })
+    );
   }),
 ];
 
-export default handlers
+export default handlers;

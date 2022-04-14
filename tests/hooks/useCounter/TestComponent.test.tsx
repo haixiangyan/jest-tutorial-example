@@ -1,6 +1,6 @@
 import useCounter from "hooks/useCounter";
-import {render, screen} from "@testing-library/react";
-import userEvent from '@testing-library/user-event'
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import React from "react";
 
 const UseCounterTest = () => {
@@ -13,49 +13,49 @@ const UseCounterTest = () => {
       <button onClick={() => set(10)}>set(10)</button>
       <button onClick={reset}>reset()</button>
     </section>
-  )
+  );
 };
 
-describe('useCounter', () => {
-  it('可以做加法', async () => {
-    render(<UseCounterTest />)
+describe("useCounter", () => {
+  it("可以做加法", async () => {
+    render(<UseCounterTest />);
 
-    const incBtn = screen.getByText('inc(1)')
+    const incBtn = screen.getByText("inc(1)");
 
     await userEvent.click(incBtn);
 
-    expect(screen.getByText('Counter: 1')).toBeInTheDocument();
+    expect(screen.getByText("Counter: 1")).toBeInTheDocument();
   });
 
-  it('可以做减法', async () => {
-    render(<UseCounterTest />)
+  it("可以做减法", async () => {
+    render(<UseCounterTest />);
 
-    const decBtn = screen.getByText('dec(1)')
+    const decBtn = screen.getByText("dec(1)");
 
     await userEvent.click(decBtn);
 
-    expect(screen.getByText('Counter: -1')).toBeInTheDocument();
-  })
+    expect(screen.getByText("Counter: -1")).toBeInTheDocument();
+  });
 
-  it('可以设置值', async () => {
-    render(<UseCounterTest />)
+  it("可以设置值", async () => {
+    render(<UseCounterTest />);
 
-    const setBtn = screen.getByText('set(10)')
+    const setBtn = screen.getByText("set(10)");
 
     await userEvent.click(setBtn);
 
-    expect(screen.getByText('Counter: 10')).toBeInTheDocument();
-  })
+    expect(screen.getByText("Counter: 10")).toBeInTheDocument();
+  });
 
-  it('可以重置值', async () => {
-    render(<UseCounterTest />)
+  it("可以重置值", async () => {
+    render(<UseCounterTest />);
 
-    const incBtn = screen.getByText('inc(1)')
-    const resetBtn = screen.getByText('reset()')
+    const incBtn = screen.getByText("inc(1)");
+    const resetBtn = screen.getByText("reset()");
 
     await userEvent.click(incBtn);
     await userEvent.click(resetBtn);
 
-    expect(screen.getByText('Counter: 0')).toBeInTheDocument();
-  })
-})
+    expect(screen.getByText("Counter: 0")).toBeInTheDocument();
+  });
+});
