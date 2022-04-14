@@ -43,4 +43,16 @@ describe('useCounter', () => {
 
     expect(result.current[0]).toEqual(0);
   });
+
+  it('可以使用最大值', () => {
+    const { result } = renderHook(() => useCounter(100, { max: 10 }));
+
+    expect(result.current[0]).toEqual(10);
+  });
+
+  it('可以使用最小值', () => {
+    const { result } = renderHook(() => useCounter(0, { min: 10 }));
+
+    expect(result.current[0]).toEqual(10);
+  });
 });
