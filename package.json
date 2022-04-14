@@ -7,7 +7,8 @@
     "build": "webpack",
     "start": "webpack serve",
     "lint": "eslint tests src --fix",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -40,11 +41,13 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-testing-library": "^5.3.1",
     "html-webpack-plugin": "5.5.0",
+    "husky": "^7.0.4",
     "jest": "27.5.1",
     "jest-environment-jsdom-global": "3.0.0",
     "jest-transform-stub": "2.0.0",
     "less": "4.1.2",
     "less-loader": "10.2.0",
+    "lint-staged": "^12.3.7",
     "msw": "0.39.2",
     "prettier": "^2.6.2",
     "style-loader": "3.3.1",
