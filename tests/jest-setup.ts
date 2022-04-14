@@ -1,3 +1,4 @@
+import "jest-location-mock";
 import "@testing-library/jest-dom";
 import server from "./mockServer/server";
 

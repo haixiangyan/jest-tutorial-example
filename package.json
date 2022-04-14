@@ -49,7 +49,7 @@
     "html-webpack-plugin": "5.5.0",
     "husky": "^7.0.4",
     "jest": "27.5.1",
-    "jest-environment-jsdom-global": "3.0.0",
+    "jest-location-mock": "^1.0.9",
     "jest-transform-stub": "2.0.0",
     "less": "4.1.2",
     "less-loader": "10.2.0",
