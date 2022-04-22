@@ -1,6 +1,6 @@
-# jest-starter
+# jest-tutorial
 
-[![Coverage Status](https://coveralls.io/repos/github/haixiangyan/jest-starter/badge.svg?branch=main)](https://coveralls.io/github/haixiangyan/jest-starter?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/haixiangyan/jest-tutorial/badge.svg?branch=main)](https://coveralls.io/github/haixiangyan/jest-tutorial?branch=main)
 
 [Jest](https://jestjs.io/) 看似很简单，就像很多博客写的那样：
 

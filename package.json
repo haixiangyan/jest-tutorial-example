@@ -1,5 +1,5 @@
 {
-  "name": "jest-starter",
+  "name": "jest-tutorial",
   "version": "1.0.0",
   "description": "一个 Jest 的小实验",
   "main": "index.js",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haixiangyan/jest-starter.git"
+    "url": "git+https://github.com/haixiangyan/jest-tutorial.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/haixiangyan/jest-starter/issues"
+    "url": "https://github.com/haixiangyan/jest-tutorial/issues"
   },
-  "homepage": "https://github.com/haixiangyan/jest-starter#readme",
+  "homepage": "https://github.com/haixiangyan/jest-tutorial#readme",
   "dependencies": {
     "antd": "4.19.5",
     "axios": "0.26.1",
