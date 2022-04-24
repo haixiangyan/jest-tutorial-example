@@ -1,5 +1,5 @@
 {
-  "name": "jest-tutorial",
+  "name": "jest-tutorial-example",
   "version": "1.0.0",
   "description": "一个 Jest 的小实验",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haixiangyan/jest-tutorial.git"
+    "url": "git+https://github.com/haixiangyan/jest-tutorial-example.git"
   },
   "keywords": [],
   "author": "",
