@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title 可以正确渲染大字 1`] = `
+<body>
+  <div>
+    <p
+      style="font-size: 2em; color: red;"
+    >
+      大字
+    </p>
+  </div>
+</body>
+`;
+
+exports[`Title 可以正确渲染小字 1`] = `
+<body>
+  <div>
+    <p
+      style="font-size: 0.5em; color: green;"
+    >
+      小字
+    </p>
+  </div>
+</body>
+`;
