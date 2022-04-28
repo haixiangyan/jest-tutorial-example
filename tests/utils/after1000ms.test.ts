@@ -9,6 +9,8 @@ describe("after1000ms", () => {
     jest.spyOn(global, "setTimeout");
     const callback = jest.fn();
 
+    expect(callback).not.toHaveBeenCalled();
+
     after1000ms(callback);
 
     jest.runAllTimers();
