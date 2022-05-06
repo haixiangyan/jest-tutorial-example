@@ -31,6 +31,8 @@
     "redux": "4.2.0"
   },
   "devDependencies": {
+    "@swc/core": "1.2.165",
+    "@swc/jest": "0.2.20",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "12.1.4",
     "@testing-library/react-hooks": "8.0.0",
