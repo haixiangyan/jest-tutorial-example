@@ -11,7 +11,11 @@ const initialState = {
 const userSlice = createSlice({
   name: "user",
   initialState,
-  reducers: {},
+  reducers: {
+    updateUserName: (state, action) => {
+      state.name = action.payload.name;
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchUserThunk.pending, (state) => {
       state.status = "loading";
@@ -21,7 +25,12 @@ const userSlice = createSlice({
       state.name = action.payload.name;
       state.id = action.payload.id;
     });
+    builder.addCase(fetchUserThunk.rejected, (state) => {
+      state.status = "error";
+    });
   },
 });
+
+export const { updateUserName } = userSlice.actions;
 
 export default userSlice.reducer;
