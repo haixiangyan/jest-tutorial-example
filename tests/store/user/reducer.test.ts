@@ -22,7 +22,7 @@ const setupHttp = (name?: string, age?: number) => {
 };
 
 // 非常不推荐这样去测 redux 的代码
-describe("userSlice", () => {
+describe("reducer", () => {
   describe("测试 reducer", () => {
     describe("updateUserName", () => {
       it("可以更新用户姓名", () => {
