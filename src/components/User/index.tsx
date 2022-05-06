@@ -21,9 +21,16 @@ const User: FC = () => {
 
       {status === "loading" && <p>加载中...</p>}
 
-      <p>ID：{user.id}</p>
-      <p>性名：{user.name}</p>
-      <p>年龄：{user.age}</p>
+      {user.id ? (
+        <div>
+          <p>ID：{user.id}</p>
+          <p>姓名：{user.name}</p>
+          <p>年龄：{user.age}</p>
+        </div>
+      ) : (
+        <p>无用户信息</p>
+      )}
+
       <Button onClick={onClick} type="primary">
         加载用户
       </Button>
