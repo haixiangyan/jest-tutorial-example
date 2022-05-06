@@ -2,7 +2,7 @@ import userReducer from "./user/reducer";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
-const reducer = combineReducers({
+export const reducer = combineReducers({
   user: userReducer,
 });
 
