@@ -5,7 +5,7 @@ import React from "react";
 const setup = (initialNumber: number) => {
   const returnVal = {};
 
-  const UseCounterTest = () => {
+  const TestComponent = () => {
     const [counter, utils] = useCounter(initialNumber);
 
     Object.assign(returnVal, {
@@ -16,7 +16,7 @@ const setup = (initialNumber: number) => {
     return null;
   };
 
-  render(<UseCounterTest />);
+  render(<TestComponent />);
 
   return returnVal;
 };
