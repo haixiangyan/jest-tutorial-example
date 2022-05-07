@@ -21,11 +21,18 @@ const setup = (initialEntries: InitialEntry[]) => {
     return null;
   };
 
+  // 此处为 react router v6 的写法
   render(
     <Router location={history.location} navigator={history}>
       <TestComponent />
     </Router>
   );
+  // 此处为 react router v5 的写法
+  // render(
+  //   <Router history={history}>
+  //     <TestComponent />
+  //   </Router>
+  // );
 
   return returnVal;
 };
