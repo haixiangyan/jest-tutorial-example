@@ -1,6 +1,6 @@
 # jest-tutorial-example
 
-[![Coverage Status](https://coveralls.io/repos/github/haixiangyan/jest-tutorial-example/badge.svg?branch=main)](https://coveralls.io/github/haixiangyan/jest-tutorial?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/haixiangyan/jest-tutorial-example/badge.svg?branch=main)](https://coveralls.io/github/haixiangyan/jest-tutorial-example?branch=main)
 
 [Jest](https://jestjs.io/) 看似很简单，就像很多博客写的那样：
 
